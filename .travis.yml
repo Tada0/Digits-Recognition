@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.6"
+# command to install dependencies
+install:
+  - pip install numpy
+  - pip install tada0-toddler-neural-network
+  - pip install python-mnist
+  - pip install pypng
+# command to run tests
+script:
+  - python main.py
