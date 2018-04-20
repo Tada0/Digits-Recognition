@@ -21,7 +21,9 @@ It provides:
 - Digit recognition based on user provided image
 - Picture should be 28x28px, png format, black background, as example in Test_Images/*
 
-- <a href="https://github.com/Tada0/Toddler-Neural-Network">Toddler Neural Network</a> required
+
+
+<a href="https://github.com/Tada0/Toddler-Neural-Network">Toddler Neural Network</a> required
 
 
 Example code in ``python``
