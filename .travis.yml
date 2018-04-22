@@ -8,6 +8,8 @@ install:
   - pip install tada0-toddler-neural-network
   - pip install mnist==0.2.1
   - pip install pypng
+  - travis_wait 30 mvn install
+  
 # command to run tests 
 script:
   - python main.py
