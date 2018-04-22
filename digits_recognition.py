@@ -7,6 +7,7 @@ warnings.filterwarnings("ignore")
 
 
 def Train_Network(n_network, n):
+
     iterations = n
 
     print("Preparing Training Data Set.")

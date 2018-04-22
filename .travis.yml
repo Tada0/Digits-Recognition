@@ -6,7 +6,7 @@ python:
 install:
   - pip install numpy
   - pip install tada0-toddler-neural-network
-  - pip install python-mnist
+  - pip install mnist==0.2.1
   - pip install pypng
 # command to run tests 
 script:
