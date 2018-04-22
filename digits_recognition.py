@@ -86,11 +86,3 @@ def Test_Network_With_Image(n_network, image):
 
     print("Prediction: {0}".format(position) + " Certainty: {0:.2f}".format(output[position] * 100) + "%")
 
-    # network = NN.NeuralNetwork(784, 200, 10)
-    # network.set_learning_rate(0.001)
-    # NF.Train_Network(network, 50)
-    # NF.Test_Network(network)
-    # network.save()
-    # nn = NN.NeuralNetwork('2018_04_18___13_44_23___784_200_10')
-    # Test_Network_With_Image(nn, 'Test_Images/test_image.png')
-

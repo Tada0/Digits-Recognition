@@ -1,12 +1,18 @@
 import digits_recognition as DR
+import ftplib
+import pickle
 from toddlernetwork import neural_network as NN
 
 if __name__ == '__main__':
 
-    # network = NN.NeuralNetwork(784, 50, 10)
-    # DR.Train_Network(network, 100)
-    # DR.Test_Network(network)
-    # network.save()
+    n = NN.NeuralNetwork(784, 50, 10)
+    n.set_learning_rate(0.003)
+    DR.Train_Network(n, 1000)
+    DR.Test_Network(n)
+    n.save()
 
-    network = NN.NeuralNetwork('2018_04_18___13_44_23___784_200_10')
-    DR.Test_Network_With_Image(network, 'Test_Images/test_image.png')
+    session = ftplib.FTP('keikeikei.ugu.pl', 'keikeikei.ugu.pl', 'keikeikei123')
+    file = open("nn.tnn", 'rb')
+    session.storbinary('STOR nn.tnn', file)
+    file.close()
+    session.quit()
